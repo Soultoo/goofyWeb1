@@ -1,0 +1,26 @@
+<body >
+<p style="position: absolute; left: 45%; top: 20%; /*px funkar inte här?*/"><---- Bordern ligger mellan margin o padding / content box</p>
+    <div 
+        style=
+            "
+            text-align:center; /*Detta motsvar alltså ctrl shift e i doocs*/
+            width: 500px;
+            height: 500px;
+            color: red; /* Color påverkar text av children*/
+            background-color: yellow;
+
+            padding-left: 100px; /*Gillar inte när man bara skriver färgnamn*/ /*När denna växer växer även content för att kompensera??*/ /*Text kommer längre från gröna bordern*/
+            border: 15px solid green; /*Border måste vara solid (eller dashed) för att synas*/
+            margin: 100px; /*Inte färgnamn här heller, det styleattributet försvinner*/ /*Gör inget jäntemot <img> för bara siblings o parents påverkas*/ 
+        ">
+        Content box! Also, padding är visst en del av boxen och får samma background-color. Padding har padding-left (och right)-versioner
+    </div>
+    <p> Här finns en margin (ignorera texten) - det räcker att ett element har en margin </p>
+    <p> Notice att avståndet är till texten här och inte till den undre rutan </p>
+    <div ><!--style="border: 1px green;"*-->
+
+    <img src="./img_for_pure_html/box-model-of-CSS.webp" width="500px" height="500px" style="border: 1px green solid;">
+
+    </div>
+
+</body>
