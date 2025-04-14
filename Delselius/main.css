@@ -1,0 +1,163 @@
+
+
+@font-face {
+        font-family: charter_regular;
+        src: url(./fonts/Charter\ Regular.otf);
+}
+
+@font-face {
+        font-family: open_sans;
+        src: url(./fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+.red_hor_bar {
+        background-color:  #BD2121;
+}
+
+#topmost_red_bar {
+        width: 100%;
+        height: 15px;
+}
+
+#middle_red_bar {
+        width: 100%;
+        height: 15px;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+}
+
+.gold_hor_bar {
+        background-color:  #D7B74E;
+        width: 100%;
+        height: 8px;
+}
+
+#topmost_gold_bar {
+        display: none;
+        
+}
+
+#middle_gold_bar {
+
+}
+
+#hero_img {
+        background-image: url("./images/delselius-14.webp");
+        width: 100%;
+        height: 40vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+
+#main_logo {
+        background-image: url(images/cropped-delselius-logo-1.png);
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        -webkit-filter: drop-shadow(5px 5px 5px #222);
+        filter: drop-shadow(0px 5px 5px #2222223b);
+}
+
+#rest_of_website_flex {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
+}
+
+#first_header {
+        font-family: charter_regular;
+        font-size: 30px;
+        margin-top: 100px;
+}
+
+#p1 {
+        text-align: center;
+        margin-top: 10px;
+        width: 60vw;
+}
+
+.down_arrow_icon {
+        background-image: url(icons/down-arrow.svg);
+        width: 20px;
+        height: 20px;
+        background-position: center;
+        background-size: cover;
+}
+
+#scroll_down_arrow {
+        margin-top: 40px;
+        position:relative;
+        animation: float 3s infinite;
+}
+
+@keyframes float{
+0% { top:-5px }
+50% {top:5px}
+100% { top:-5px }
+}
+
+.cafe_container {
+        background-color: burlywood;
+        border-radius: 10px;
+        height: 60vh;
+        width: 90%;
+        margin-top: 100px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+}
+
+.cafe_image {
+        
+        
+
+        width: 95%;
+        max-width: 666px;
+        max-height: 100%;
+
+        aspect-ratio: 4/3;
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        margin-top: 10px;
+}
+
+.cafe_info {
+        flex-grow: 1;
+        border: solid 1px;
+        width: 90%;
+}
+
+.cafe_info_header {
+        font-family: charter_regular;
+        font-size: 30px;
+
+}
+
+#cafe_image_delselius {
+        background-image: url("./images/gustavsberg-delselius-konditori-113-888.jpg");
+}
+
+@media only screen and (min-width: 800px) {
+        #topmost_gold_bar {
+                display: block;
+        }
+
+        #topmost_red_bar {
+                height: 30px;
+        }
+}
+
+
+body {
+        margin: 0%;
+        font-family: open_sans;
+}
